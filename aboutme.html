@@ -39,7 +39,7 @@
         height: 80px;
         width: 100%;
         text-align:center;
-        
+
 
         }
 
@@ -84,7 +84,7 @@
 
      <div id="navigation-container">
           <ul>
-           <li><a href="index4.html"><strong>HOME</strong></a></li>
+           <li><a href="index.html"><strong>HOME</strong></a></li>
            <li><a href="aboutme.html"><strong>ABOUT ME</strong></a></li>
            <li><a href="Tope Babajide_RESUME-2.pdf"><strong>RESUME</strong></a></li>
            <li><a href="#header"><strong>CONTACT ME</strong></a></li>
@@ -121,14 +121,18 @@
           <div class="addy">
           <div id="header"><h1>Contact Me!</h1></div>
 
-               <form name="Topesform" action="mailto:topebabajide@gmail.com" method="post">
-                 <strong>First name</strong>: <br><input type="text" name="firstname" value="first name" size="50"><br/><br/>
-                 <strong>Last name:</strong> <br><input type="text" name="lastname" value="last name" size="50"><br/><br/>
-                 <strong>E-mail address:</strong><br> <input type="email" name="email" value="e-mail address" size="50"><br/><br/><br/>
+          <form class="email" action="sendmail.php" method="post">
+              <p><strong>Name:</strong></p>
+              <input type="text" name="name" />
+              <p><strong>E-mail:</strong></p>
+              <input type="text" name="email" />
+              <p><strong>Subject:</strong></p>
+              <input type="text" name="subject" />
+              <p><strong>Message:</strong></p>
+              <textarea name="message"></textarea></p>
 
-                 <h2>Message:</h2><textarea name="msg" rows="10" cols="75"></textarea><br/>
-                 <input type="submit" value="Submit Me!">
-               </form>
+              <input class="send" type="submit" value="Send">
+
                <br>
                <br>
                <br>
@@ -138,10 +142,7 @@
                <img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Tope Babajide's profile on LinkedIn">
               </a>
                <br/>
-               <br/>
-               <br/>
                <hr>
-               <br/>
                <br/>
                <br/>
              </div>
